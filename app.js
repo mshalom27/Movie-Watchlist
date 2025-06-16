@@ -41,7 +41,8 @@ app.post("/register", async(req, res) => {
 
         let token = jwt.sign({email: email, userid: user._id}, "secret");
         res.cookie("token", token);
-        res.render("login");
+        res.render("login", { message: "Registration successful! Please log in." });
+
 
         });
     });  
@@ -62,7 +63,7 @@ app.post("/login", async(req, res) => {
             res.status(200).redirect("/profile");
 
         }
-        else res.redirect("/login");
+        else res.status(401).render("login", { message: "Incorrect password" });
     })
 });
 
