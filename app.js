@@ -13,10 +13,11 @@ app.use(cookieParser());
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
+app.set('views', path.join(__dirname, 'views'));
 
 
 app.get("/", (req, res) => {
-    res.render("index", { message: null });
+    res.render("index", { message: "" });
 });
 
 app.get("/login", (req, res) => {
@@ -116,10 +117,10 @@ app.post("/update/:id", isLoggedIn, async(req, res) => {
 });
 
 app.get('/delete/:id', isLoggedIn, async (req, res) => {
-  let movie = await movieModel.findById(req.params.id);
+  let movie = await movieModel.findById(req.params.id).populate('user');
   if (!movie) return res.redirect('/profile');
 
-  await userModel.findByIdAndUpdate(movie.user, { $pull: { movies: movie._id } });
+  await userModel.findByIdAndUpdate(movie.user.toString(), { $pull: { movies: movie._id } });
   await movieModel.findByIdAndDelete(movie._id);
 
   res.redirect('/profile');
@@ -140,6 +141,7 @@ function isLoggedIn(req, res, next) {
     } catch (err) {
         return res.redirect("/login");
     }
+
 }  
 
 app.listen(3000, () => {
