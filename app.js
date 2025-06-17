@@ -131,7 +131,7 @@ app.get('/delete/:id', isLoggedIn, async (req, res) => {
     let movie = await movieModel.findById(req.params.id).populate('user');
     if (!movie) return res.redirect('/profile');
 
-    await userModel.findByIdAndUpdate(movie.user.toString(), { $pull: { movies: movie._id } });
+    await userModel.findByIdAndUpdate(movie.user._id, { $pull: { movies: movie._id } });
     await movieModel.findByIdAndDelete(movie._id);
 
     res.redirect('/profile');
