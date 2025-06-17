@@ -41,7 +41,7 @@ this app lets users sign up, log in, add movies to a personalized watchlist, and
 ---
 
 ## 🗂️ Folder Structure
-
+```
 Movie-Watchlist/
 │
 ├── .gitignore
@@ -57,7 +57,7 @@ Movie-Watchlist/
     ├── index.ejs
     ├── login.ejs
     └── profile.ejs
-
+```
 ---
 
 ## 🚀 Getting Started
