@@ -16,7 +16,7 @@ this app lets users sign up, log in, add movies to a personalized watchlist, and
 - LogIn to View your profile and current list
 - EJS templating for dynamic views
 - Built with clean MVC architecture
-- 🗃MongoDB Atlas for remote database- 
+- MongoDB Atlas for remote database- 
 
 ---
 
