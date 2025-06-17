@@ -9,14 +9,14 @@ this app lets users sign up, log in, add movies to a personalized watchlist, and
 
 ## ✨ Features
 
-- 📝 User authentication (SignUp / LogIn / Log Out)
-- 🔐 Passwords hashed securely
-- ➕ Add movies to your watchlist
-- 🎥 Update or Delete movies from your list
-- 👤 LogIn to View your profile and current list
-- 🎨 EJS templating for dynamic views
-- 🧾 Built with clean MVC architecture
-- 🗃️ MongoDB Atlas for remote database- 
+- User authentication (SignUp / LogIn / Log Out)
+- Passwords hashed securely
+- Add movies to your watchlist
+- Update or Delete movies from your list
+- LogIn to View your profile and current list
+- EJS templating for dynamic views
+- Built with clean MVC architecture
+- 🗃MongoDB Atlas for remote database- 
 
 ---
 
@@ -25,7 +25,7 @@ this app lets users sign up, log in, add movies to a personalized watchlist, and
 1. **Sign Up**: Create your account.
 2. **Log In**: Access your personal watchlist.
 3. **Add Movies**: Click "Add Movie" and fill out the details.
-4. **Manage Your List**: Edit ✏️ or Delete ❌ movies as you watch them.
+4. **Manage Your List**: Edit or Delete movies as you watch them.
 5. **View Profile**: See your current watchlist and update your info.
 
 ---
@@ -64,9 +64,9 @@ Movie-Watchlist/
 
 ### Prerequisites
 
-- Node.js (v16+ recommended) 🟢
-- npm 📦
-- MongoDB database (local or cloud) 🍃
+- Node.js (v16+ recommended) 
+- npm 
+- MongoDB database (local or cloud) 
 
 ### Installation
 
