@@ -132,7 +132,9 @@ Contributions are welcome! Feel free to open issues or submit PRs.
 
 ## 📄 License
 
-This project is open source and available under the MIT License.
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
