@@ -1,7 +1,5 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/watchlist');
-
 const userSchema = new mongoose.Schema({
   username: String,
   name: String,
