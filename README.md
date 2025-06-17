@@ -105,15 +105,15 @@ Movie-Watchlist/
 
 The following variables are required:
 
-MONGO_URI	           MongoDB Atlas connection URI
-SESSION_SECRET	     Session encryption key
+- MONGO_URI	           MongoDB Atlas connection URI
+- SESSION_SECRET	     Session encryption key
 
 ---
 
 ## 📌 Important Scripts
 
-npm start	         Starts the application
-npm run dev	       Runs app with nodemon
+- npm start	         Starts the application
+- npm run dev	       Runs app with nodemon
 
 ---
 
